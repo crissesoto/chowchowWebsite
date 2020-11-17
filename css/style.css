@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20% 0 100px;
+  height: 130px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 720px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 30px;
+  min-width: 550;
+}
+
+header nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+header .logo {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  color: #FFF;
+  font-size: 22px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+.page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-wrapper .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100vh;
+  background-image: url("../img/chowchow.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.page-wrapper .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.page-wrapper .right h1 {
+  font-family: "Anton", sans-serif;
+  color: chocolate;
+  font-size: 6.3rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+  margin-bottom: 50px;
+}
+
+.page-wrapper .right p {
+  max-width: 500px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.page-wrapper .right .content-wrapper {
+  position: absolute;
+  top: 21vh;
+  left: -80px;
+}
+
+.page-wrapper .right .article-wrapper {
+  margin-left: 200px;
+  padding-right: 120px;
+}
+/*# sourceMappingURL=style.css.map */

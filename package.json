@@ -1,0 +1,31 @@
+{
+  "name": "animewebsite",
+  "version": "1.0.0",
+  "description": "responsive webiste with anime.js animations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --include-path css scss/style.scss  css/style.css"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crissesoto/chowchowWebsite.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "anime",
+    "responsive",
+    "sass"
+  ],
+  "author": "Crisse Soto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crissesoto/chowchowWebsite/issues"
+  },
+  "homepage": "https://github.com/crissesoto/chowchowWebsite#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
