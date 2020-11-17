@@ -7,20 +7,20 @@
 }
 
 body {
-  height: 100vh;
+  _height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
-  position: absolute;
+  _position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -28,40 +28,71 @@ header {
   height: 130px;
 }
 
+@media screen and (max-width: 992px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 720px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 30px;
-  min-width: 550;
+  margin-left: 50px;
+  min-width: 300px;
+  width: 70%;
+}
+
+@media screen and (max-width: 991px) {
+  header nav {
+    width: 100vw;
+    margin-top: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 header nav a {
   color: #000;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
 }
 
+@media screen and (max-width: 991px) {
+  header nav a {
+    margin-right: 10px;
+  }
+}
+
 header .logo {
-  font-family: "Roboto Slab", serif;
-  font-weight: 700;
-  color: #FFF;
+  font-family: "Anton", sans-serif;
+  font-weight: 800;
+  color: chocolate;
   font-size: 22px;
   letter-spacing: 1px;
-  position: absolute;
-  top: 50px;
-  left: 100px;
 }
 
 .page-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 430px) {
+  .page-wrapper {
+    display: block;
+  }
 }
 
 .page-wrapper .left {
@@ -73,6 +104,12 @@ header .logo {
   background-size: cover;
   background-position: center;
   z-index: -1;
+}
+
+@media screen and (max-width: 430px) {
+  .page-wrapper .left {
+    height: 30vh;
+  }
 }
 
 .page-wrapper .right {
@@ -92,13 +129,27 @@ header .logo {
 
 .page-wrapper .right h1 {
   font-family: "Anton", sans-serif;
-  color: chocolate;
-  font-size: 6.3rem;
+  color: crimson;
+  font-size: 5.3rem;
   font-weight: 800;
   letter-spacing: 3px;
   margin-bottom: 50px;
   letter-spacing: 3px;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 600px) {
+  .page-wrapper .right h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .page-wrapper .right h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 .page-wrapper .right p {
@@ -114,8 +165,33 @@ header .logo {
   left: -80px;
 }
 
+@media screen and (max-width: 798px) {
+  .page-wrapper .right .content-wrapper {
+    top: 10vh;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .page-wrapper .right .content-wrapper {
+    position: static;
+  }
+}
+
 .page-wrapper .right .article-wrapper {
-  margin-left: 200px;
+  margin-left: 10vw;
   padding-right: 120px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 430px) {
+  .page-wrapper .right .article-wrapper {
+    margin-left: 20vw;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .page-wrapper .right .article-wrapper {
+    padding-right: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
